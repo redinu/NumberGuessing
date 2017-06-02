@@ -5,13 +5,12 @@ import java.util.Random;
 
 public class NumberGuessing {
 
+	
 	public static void main(String[] args) {
 		
 		
-		
-		
 		Random r = new Random();
-		int x = 1 + r.nextInt(5);
+		int x = 1 + r.nextInt(100);
 		
 		
 		String choice = "Y";
@@ -24,12 +23,12 @@ public class NumberGuessing {
 			int y = scan.nextInt();
 						
 				if(y<x){
-				System.out.println("You are incorrect");
+				System.out.println("You guessed too low ");
 				
 				}
 				else if(y>x)
 				{
-				System.out.println("You are incorrect");
+				System.out.println("You guessed too high");
 					
 				}else{
 					System.out.println("You got it right!");
